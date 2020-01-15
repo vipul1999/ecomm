@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Title  -->
+        <title>LifeStyle Store | Cart</title>
+
+        <!-- Stylesheets  -->
+        <link rel="stylesheet" href="../statics/css/bootstrap.css" />
+        <link rel="stylesheet" href="../css/commonStyling.css" />
+        <link rel="stylesheet" href="../css/productStyle.css" />
+
+        <!-- Font Awesome  -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <!-- Navigation Bar  -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <!-- Brand -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">LifeStyle Store</a>
+                </div>
+
+                <!-- Toggler  -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#toggler"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="toggler">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <button
+                                    class="btn btn-outline-light nav-btn"
+                                    data-toggle="modal"
+                                    data-target="#loginModal"
+                                >
+                                    <i
+                                        class="fa fa-home"
+                                        aria-hidden="true"
+                                    ></i>
+                                    &nbsp; Home
+                                </button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <button
+                                    class="btn btn-outline-light nav-btn"
+                                    data-toggle="modal"
+                                    data-target="#loginModal"
+                                >
+                                    <i
+                                        class="fa fa-sign-in"
+                                        aria-hidden="true"
+                                    ></i>
+                                    &nbsp; Sign In
+                                </button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <button
+                                    class="btn btn-outline-light nav-btn"
+                                    data-toggle="modal"
+                                    data-target="#cart"
+                                >
+                                    <i
+                                        class="fa fa-shopping-cart"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                    <sup
+                                        >(<span class="total-count"></span
+                                        >)</sup
+                                    >
+                                    &nbsp; Cart
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <!-- Main Content -->
+            <div class="row">
+                <!-- Shirts -->
+                <div class="container product text-center" id="product-shirts">
+                    <div class="row">
+                        <h1 class="section-heading mb-3">Shirts</h1>
+                    </div>
+                    <div class="row product-items">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/shirts/shirt-a.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">White Shirt</h4>
+                                    <p class="card-text">Price: <span class="text-danger">499/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="FS White Shirt"
+                                    data-price="499"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-xs">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/shirts/shirt-b.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Blue Shirt</h4>
+                                    <p class="card-text">Price: <span class="text-danger">599/-</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="FS Blue Shirt"
+                                    data-price="599"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-sm">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/shirts/shirt-c.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Checks Shirt</h4>
+                                    <p class="card-text">Price: <span class="text-danger">699/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="FS Check Shirt"
+                                    data-price="699"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-md">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/shirts/shirt-d.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Plain White</h4>
+                                    <p class="card-text">Price: <span class="text-danger">399/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="HS Plain White"
+                                    data-price="399"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- T-Shirts -->
+                <div class="container product text-center" id="product-tshirts">
+                    <div class="row">
+                        <h1 class="section-heading mb-3">T-Shirts</h1>
+                    </div>
+                    <div class="row product-items">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/tshirts/tshirt-a.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Gray T-Shirt</h4>
+                                    <p class="card-text">Price: <span class="text-danger">299/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="HS Gray T-Shirt"
+                                    data-price="299"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-xs">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/tshirts/tshirt-b.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">White T-Shirt</h4>
+                                    <p class="card-text">Price: <span class="text-danger">299/-</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="HS White T-Shirt"
+                                    data-price="299"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-sm">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/tshirts/tshirt-c.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Blue T-Shirt</h4>
+                                    <p class="card-text">Price: <span class="text-danger">299/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="HS Blue T-Shirt"
+                                    data-price="299"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-md">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/tshirts/tshirt-d.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Red T-Shirt</h4>
+                                    <p class="card-text">Price: <span class="text-danger">299/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="HS Red T-Shirt"
+                                    data-price="299"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Jeans  -->
+                <div class="container product text-center" id="product-jeans">
+                    <div class="row">
+                        <h1 class="section-heading mb-3">Jeans</h1>
+                    </div>
+                    <div class="row product-items">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/jeans/jeans-a.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Printed Jeans</h4>
+                                    <p class="card-text">Price: <span class="text-danger">799/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Printed Jeans"
+                                    data-price="799"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-xs">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/jeans/jeans-b.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Urbano Slim</h4>
+                                    <p class="card-text">Price: <span class="text-danger">899/-</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Urbano Slim Jeans"
+                                    data-price="899"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-sm">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/jeans/jeans-c.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Ripped Jeans</h4>
+                                    <p class="card-text">Price: <span class="text-danger">899/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Ripped Jeans"
+                                    data-price="899"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-md">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/jeans/jeans-d.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Slim Fit</h4>
+                                    <p class="card-text">Price: <span class="text-danger">999/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Slim Fit Jeans"
+                                    data-price="999"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Ethnic Wear -->
+                <div class="container product text-center" id="product-ethnic">
+                    <div class="row">
+                        <h1 class="section-heading mb-3">Ethnic Wear</h1>
+                    </div>
+                    <div class="row product-items">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/ethnic/ethnic-a.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Brown Kurta</h4>
+                                    <p class="card-text">Price: <span class="text-danger">999/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Brown Kurta Men"
+                                    data-price="999"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-xs">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/ethnic/ethnic-b.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Blue Kurta</h4>
+                                    <p class="card-text">Price: <span class="text-danger">1199/-</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Blue Kurta Men"
+                                    data-price="1199"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-sm">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/ethnic/ethnic-c.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Red Kurta</h4>
+                                    <p class="card-text">Price: <span class="text-danger">1399/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Red Kurta"
+                                    data-price="1399"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-md">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/ethnic/ethnic-d.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Printed Kurta</h4>
+                                    <p class="card-text">Price: <span class="text-danger">1499/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Printed Black Kurta"
+                                    data-price="1499"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Sports Wear -->
+                <div class="container product text-center" id="product-sports">
+                    <div class="row">
+                        <h1 class="section-heading mb-3">Sports Wear</h1>
+                    </div>
+                    <div class="row product-items">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/sports/sports-a.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Jersey</h4>
+                                    <p class="card-text">Price: <span class="text-danger">699/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Blue Jersey"
+                                    data-price="699"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-xs">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/sports/sports-b.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Tracksuit</h4>
+                                    <p class="card-text">Price: <span class="text-danger">1199/-</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="White Tracksuit"
+                                    data-price="1199"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-sm">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/sports/sports-c.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Yoga Pant</h4>
+                                    <p class="card-text">Price: <span class="text-danger">1099/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Yoga Pant Women"
+                                    data-price="1099"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-md">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/sports/sports-d.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Shorts</h4>
+                                    <p class="card-text">Price: <span class="text-danger">699/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Men Shorts"
+                                    data-price="699"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Tank Tops -->
+                <div class="container product text-center" id="product-tank-tops">
+                    <div class="row">
+                        <h1 class="section-heading mb-3">Tank Tops</h1>
+                    </div>
+                    <div class="row product-items">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/tank-tops/tank-top-a.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Gray Top</h4>
+                                    <p class="card-text">Price: <span class="text-danger">399/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Gray Tank Top"
+                                    data-price="399"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-xs">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/tank-tops/tank-top-b.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Black Top</h4>
+                                    <p class="card-text">Price: <span class="text-danger">399/-</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Black Tank Top"
+                                    data-price="399"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-sm">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/tank-tops/tank-top-c.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">White Top</h4>
+                                    <p class="card-text">Price: <span class="text-danger">499/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="White Tank Top"
+                                    data-price="499"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-md">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/tank-tops/tank-top-d.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Red Top</h4>
+                                    <p class="card-text">Price: <span class="text-danger">399/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Red Tank Top"
+                                    data-price="399"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Accessories -->
+                <div class="container product text-center" id="product-acs">
+                    <div class="row">
+                        <h1 class="section-heading mb-3">Accessories</h1>
+                    </div>
+                    <div class="row product-items">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/acs/acs-a.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Leather Wallet</h4>
+                                    <p class="card-text">Price: <span class="text-danger">799/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Leather Wallet"
+                                    data-price="799"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-xs">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/acs/acs-b.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Redux Watch</h4>
+                                    <p class="card-text">Price: <span class="text-danger">1199/-</span></p>
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Redux Black Watch"
+                                    data-price="1199"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-sm">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/acs/acs-c.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Pink Purse</h4>
+                                    <p class="card-text">Price: <span class="text-danger">1399/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Pink Purse"
+                                    data-price="1399"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12 hide-md">
+                            <div class="card">
+                                <img
+                                    class="card-img-top"
+                                    src="../assets/products/acs/acs-d.jpg"
+                                    alt="Card image cap"
+                                />
+                                <div class="card-block">
+                                    <h4 class="card-title mt-4">Sunglasses</h4>
+                                    <p class="card-text">Price: <span class="text-danger">1499/-</span></p>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                    href="#"
+                                    data-name="Multicolor Sunglasses"
+                                    data-price="1499"
+                                    class="add-to-cart btn btn-primary w-100"
+                                    >Add to Cart</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="cart"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="cartModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cartModalLabel">Cart</h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table"></table>
+                        <div>
+                            Total price: $<span class="total-cart"></span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="clear-cart btn btn-danger">Clear Cart</button>
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Order now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fixed Contact Button  -->
+        <div class="contact-btn">
+            <a
+                href="#contactModal"
+                style="color: black"
+                data-toggle="modal"
+                data-target="#contactModal"
+            >
+                <i class="fa fa-phone fa-2x icon-color" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <!-- SignIn Modal  -->
+        <div
+            class="modal fade"
+            id="loginModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="loginModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">
+                            Login
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group" style="margin-top: 10px;">
+                            <span class="input-group-text">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </span>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Username"
+                                class="form-control"
+                                required
+                            />
+                        </div>
+                        <div class="input-group" style="margin-top: 20px;">
+                            <span class="input-group-text">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                            </span>
+                            <input
+                                type="password"
+                                name="password"
+                                placeholder="Password"
+                                class="form-control"
+                                required
+                            />
+                        </div>
+                        <div class="form-group" style="margin-top: 20px;">
+                            <input
+                                type="submit"
+                                value="Submit"
+                                class="btn btn-primary btn-block"
+                            />
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <p>
+                            <a href="#" data-dismiss="modal">
+                                Forgot password?
+                            </a>
+                        </p>
+                        <p class="text-right" style="display: inline-block;">
+                            New User? SignUp
+                            <a
+                                href="#signupModal"
+                                data-toggle="modal"
+                                data-dismiss="modal"
+                                >Here</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Modal  -->
+        <div
+            class="modal fade"
+            id="contactModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="contactModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">
+                            Contact
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group" style="margin-top: 10px;">
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Email: chitrakarma@gmail.com"
+                                class="form-control"
+                                disabled
+                            />
+                        </div>
+                        <div class="input-group" style="margin-top: 10px;">
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Mobile: +91 9922542931"
+                                class="form-control"
+                                disabled
+                            />
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign Up Modal  -->
+        <div
+            class="modal fade"
+            id="signupModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="signupModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">
+                            Sign Up
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group" style="margin-top: 10px;">
+                            <span class="input-group-text">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </span>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Name"
+                                class="form-control"
+                                required
+                            />
+                        </div>
+                        <div class="input-group" style="margin-top: 20px;">
+                            <span class="input-group-text">
+                                <i
+                                    class="fa fa-envelope-o"
+                                    aria-hidden="true"
+                                    style="font-size: 11px;"
+                                ></i>
+                            </span>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="username@domain.com"
+                                class="form-control"
+                                required
+                            />
+                        </div>
+                        <div class="input-group" style="margin-top: 20px;">
+                            <span class="input-group-text">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                            </span>
+                            <input
+                                type="password"
+                                name="password"
+                                placeholder="Create Password"
+                                class="form-control"
+                                required
+                            />
+                        </div>
+                        <div class="input-group" style="margin-top: 20px;">
+                            <span class="input-group-text">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                            </span>
+                            <input
+                                type="password"
+                                name="password"
+                                placeholder="Re-Enter Password"
+                                class="form-control"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <div class="form-group w-100">
+                            <input
+                                type="submit"
+                                value="Submit"
+                                class="btn btn-primary btn-block"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer  -->
+        <footer class="page-footer pt-4 text-white bg-secondary pt-5 mt-5">
+            <div class="container text-center text-md-left text-sm-left">
+                <div class="row">
+                    <div class="col-md-4 mt-md-0 mt-3">
+                        <h5 class="footer-header">Contact Us</h5>
+                        <p>
+                            Email: lifestylestore@domain.com
+                            <br />
+                            Mobile: +91 8223888132
+                            <br />
+                            Instagram: @lifestylestore
+                        </p>
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none pb-3" />
+
+                    <div
+                        class="col-md-3 mb-md-0 mb-3 text-lg-right text-sm-left"
+                    >
+                        <h5 class="footer-header">Products</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" class="footer-link text-white"
+                                    >Shirts</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-link text-white"
+                                    >Tank Tops</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-link text-white"
+                                    >T-Shirts</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="col-md-5 mb-md-0 mb-3 text-lg-right text-sm-left"
+                    >
+                        <h5 class="footer-header ">Delivery Services</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="footer-link text-white"
+                                    >Free Delivery</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link text-white"
+                                    >One Day</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-link text-white"
+                                    >Two Day</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 bg-dark mt-5">
+                &copy; 2020 Copyright: Chitransh Vishwakarma
+            </div>
+        </footer>
+
+        <!-- Scripts  -->
+        <!-- Please note that jquery library is required for the carousel to work  -->
+        <script src="../statics/js/jquery.js"></script>
+        <script src="../statics/js/bootstrap.js"></script>
+        <script src="../js/cart.js"></script>
+    </body>
+</html>
